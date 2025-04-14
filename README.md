@@ -36,7 +36,7 @@ Key preprocessing steps:
 - Intensity normalization
 - Spatial resampling
 
-## [Baseline Model](2.baseline/README.md)
+## [Baseline Model](2.baseline/baseline_experiment.ipynb)
 Implements a 3D U-Net architecture using MONAI framework:
 - Multi-modal input (FLAIR + T1)
 - Training/validation pipeline

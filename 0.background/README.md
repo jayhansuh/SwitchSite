@@ -18,8 +18,9 @@ Ongoing challenges include class imbalance, standardizing results across scanner
 ### BIANCA – k-NN Based WMH Segmentation (Griffanti et al., 2016)  
 **Summary:** *BIANCA* uses supervised *k*-nearest neighbors classification, learning from manually labeled MRI scans to predict lesions on new scans based on voxel intensity and location [2]. It allows multi-modal input and various feature options, achieving high correlation with expert segmentations. Griffanti et al. reported Dice overlap scores in the range of 0.7–0.8, concluding BIANCA is reliable for large studies [2].
 
-![BIANCA options](images/bianca.jpg)
- **Figure:** List and brief description of the different options available with BIANCA tool and schematic representation of the different values tested in this study during the phase of algorithm optimisation. See main text for further details [2].
+<!-- ![BIANCA options](images/bianca.jpg) -->
+<img src="images/bianca.jpg" width="400"/>
+ **Figure:** BIANCA options. List and brief description of the different options available with BIANCA tool and schematic representation of the different values tested in this study during the phase of algorithm optimisation. See main text for further details [2].
 
 ### icobrain ms 5.1 – Hybrid Unsupervised + Deep Learning (Van Huffel et al., 2021)  
 **Summary:** Van Huffel et al. described icobrain ms 5.1, combining an unsupervised intensity-based method with a supervised deep learning 3D U-Net with attention gates. This hybrid approach improved lesion detection significantly, especially infratentorial lesions (14%) and juxtacortical lesions (31%) compared to older methods [3]. This combined approach leverages strengths of both methods, achieving robust segmentation performance.

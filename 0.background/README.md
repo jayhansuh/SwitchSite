@@ -11,7 +11,7 @@ In recent years, deep learning approaches have become state-of-the-art for lesio
 Ongoing challenges include class imbalance, standardizing results across scanners, and limited availability of expert-labeled data. Semi-supervised learning and domain adaptation research are tackling these issues [5].
 
 ![Example of WMH Segmentation](images/wmh_example.png)  
-**Figure:** Example FLAIR MRI slice (left) and the corresponding WMH segmentation (red mask, right). White matter hyperintensities appear as bright areas on FLAIR and are highlighted in red on the lesion mask. Automated segmentation methods aim to reproduce such masks to quantify WMH volume [5].
+**Figure 1:** Example FLAIR MRI slice (left) and the corresponding WMH segmentation (red mask, right). White matter hyperintensities appear as bright areas on FLAIR and are highlighted in red on the lesion mask. Automated segmentation methods aim to reproduce such masks to quantify WMH volume [5].
 
 ## Key Research References
 
@@ -20,19 +20,22 @@ Ongoing challenges include class imbalance, standardizing results across scanner
 
 <!-- ![BIANCA options](images/bianca.jpg) -->
 <img src="images/bianca.jpg" width="400"/>
- **Figure:** BIANCA options. List and brief description of the different options available with BIANCA tool and schematic representation of the different values tested in this study during the phase of algorithm optimisation. See main text for further details [2].
+
+**Figure 2:** BIANCA options. List and brief description of the different options available with BIANCA tool and schematic representation of the different values tested in this study during the phase of algorithm optimisation. See main text for further details [2].
 
 ### icobrain ms 5.1 – Hybrid Unsupervised + Deep Learning (Van Huffel et al., 2021)  
 **Summary:** Van Huffel et al. described icobrain ms 5.1, combining an unsupervised intensity-based method with a supervised deep learning 3D U-Net with attention gates. This hybrid approach improved lesion detection significantly, especially infratentorial lesions (14%) and juxtacortical lesions (31%) compared to older methods [3]. This combined approach leverages strengths of both methods, achieving robust segmentation performance.
 
 ![Icobrain ms architecture](images/icobrain_ms_architecture.png)
-**Figure:** Graphical representation of the attention-gate U-net used for segmentation and classification of the plaques. (Conv. – convolution, Int. Norm. – intensity normalization, Concat. – Concatenation, + – element-wise sum, × – matrix multiplication).
+
+**Figure 3:** Graphical representation of the attention-gate U-net used for segmentation and classification of the plaques. (Conv. – convolution, Int. Norm. – intensity normalization, Concat. – Concatenation, + – element-wise sum, × – matrix multiplication).
 
 ### Semi-Supervised Learning for WMH Segmentation (Rieu et al., 2021)  
 **Summary:** Rieu et al. (2021) explored semi-supervised deep learning using proxy labels transferred from T1 MRI segmentation to FLAIR scans. This approach reduced the need for large labeled datasets, achieving WMH segmentation accuracy comparable to fully supervised methods [5]. This method effectively segments WMH using only FLAIR scans, enhancing accessibility and robustness for clinical datasets.
 
 ![Semi-Supervised Pipeline](images/semi_supervised_pipeline.png)
-**Figure:** Pipeline of the proposed method. Blue boxes: input or output data; Green boxes: computational processes.
+
+**Figure 4:** Pipeline of the proposed method. Blue boxes: input or output data; Green boxes: computational processes.
 
 ## References
 
